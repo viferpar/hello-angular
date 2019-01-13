@@ -1,0 +1,70 @@
+<h2>{{titulo}}</h2>
+
+<hr>
+
+<div *ngIf="externos == true">
+  <h3>Empleados internos</h3>
+  <ul>
+    <li>{{empleado.nombre}}</li>
+    <li>{{empleado.edad}}</li>
+    <li>{{empleado.cargo}}</li>
+    <li>{{empleado.contratado}}</li>
+  </ul>
+</div>
+
+<div *ngIf="externos == false">
+  <h3>Trabajadores externos</h3>
+  <ul>
+    <li>{{trabajadores[0].nombre}}</li>
+    <li>{{trabajadores[0].edad}}</li>
+    <li>{{trabajadores[0].cargo}}</li>
+    <li>{{trabajadores[0].contratado}}</li>
+  </ul>
+</div>
+
+<button (click)="cambiarExternos()">Cambiar internos / externos</button>
+
+<hr>
+
+<div>
+  <h3>Listado de empleados:</h3>
+  <ul>
+    <li *ngFor="let empleado of trabajadores; let i = index">
+      <strong>Empleado {{i+1}}:</strong>
+      <ul>
+        <li>{{empleado.nombre}}</li>
+        <li>{{empleado.edad}}</li>
+        <li>{{empleado.cargo}}</li>
+        <li *ngIf="empleado.contratado == true">Está contratado</li>
+        <li *ngIf="empleado.contratado == false">No está contratado</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<hr>
+
+<h3>Colores switch</h3>
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="'red'" [ngClass]="{
+    fondoRojo : color == 'red'
+  }">Color ROJO</li>
+  <li *ngSwitchCase="'green'">Color VERDE</li>
+  <li *ngSwitchCase="'blue'">Color AZUL</li>
+</ul>
+
+<hr>
+
+<h3>Selector de colores:</h3>
+
+<input type="text" [(ngModel)]="color_seleccionado"/>
+<div [ngStyle]="{
+  'background':color_seleccionado,
+  'width': '200px',
+  'height': '200px',
+  float: 'right',
+  'margin-right': '69%'
+}"></div>
+<div style="clear:both">
+
+</div>

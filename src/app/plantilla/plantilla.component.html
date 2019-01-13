@@ -1,0 +1,26 @@
+<h4 style="background: lightblue">{{titulo}}</h4>
+
+<div *ngIf="administrador; then admin else noAdmin"></div>
+
+<ng-template #admin>
+  <button type="button" (click)="cambiar(false)">Cambiar</button>
+  <strong style="background:yellow">Eres el administrador del grupo</strong>
+</ng-template>
+
+<ng-template #noAdmin>
+  <button type="button" (click)="cambiar(true)">Cambiar</button>
+  <strong style="background:red; color:white">No eres el administrador del grupo</strong>
+</ng-template>
+
+<hr>
+
+<h4 style="background: lightblue">Componentes padre/hijo en Angular</h4>
+
+<hijo [texto1]="dato_externo" [texto2]="identity.tematica" (fromHijo)="receiveData($event)">
+</hijo>
+
+<div *ngIf="datosHijo">
+    <h3>{{datosHijo.nombre}}</h3>
+    <h3>{{datosHijo.web}}</h3>
+    <h3>{{datosHijo.twitter}}</h3>
+</div>
