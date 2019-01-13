@@ -1,11 +1,18 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 
 export class RopaService {
 
-  public nombre_prenda: string = 'Pantalones vaqueros';
-  public coleccion_ropa: Array<string> = ['Pantalones Blancos', 'Camiseta roja'];
+  public nombre_prenda: string;
+  public coleccion_ropa: Array<string>;
+
+  constructor() {
+    this.nombre_prenda = 'Pantalones vaqueros';
+    this.coleccion_ropa = ['Pantalones Blancos', 'Camiseta roja'];
+  }
 
   prueba(nombre_prenda) {
     return nombre_prenda;

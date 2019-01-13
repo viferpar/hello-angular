@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Empleado } from './empleado';
 
 @Component({
-  selector: 'empleado',
+  selector: 'app-empleado',
   templateUrl: './empleado.component.html',
   styleUrls: ['./empleado.component.css']
 })
 
 export class EmpleadoComponent {
-  titulo = 'Componente de empleado'
+  titulo = 'Componente de empleado';
   empleado: Empleado;
   trabajadores: Array<Empleado>;
   externos: boolean;
@@ -25,11 +25,6 @@ export class EmpleadoComponent {
     this.externos = false;
     this.color = 'red';
     this.color_seleccionado = '#ccc';
-  }
-
-  ngOnInit() {
-    console.log(this.empleado);
-    console.log(this.trabajadores);
   }
 
   cambiarExternos() {

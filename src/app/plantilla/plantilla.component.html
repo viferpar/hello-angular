@@ -16,8 +16,8 @@
 
 <h4 style="background: lightblue">Componentes padre/hijo en Angular</h4>
 
-<hijo [texto1]="dato_externo" [texto2]="identity.tematica" (fromHijo)="receiveData($event)">
-</hijo>
+<app-hijo [propiedad_uno]="dato_externo" [propiedad_dos]="identity.tematica" (fromHijo)="receiveData($event)">
+</app-hijo>
 
 <div *ngIf="datosHijo">
     <h3>{{datosHijo.nombre}}</h3>

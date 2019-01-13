@@ -6,10 +6,10 @@ export class ConversorPipe implements PipeTransform {
 
   transform(value: string, por: string) {
 
-    let value1 = parseInt(value);
-    let value2 = parseInt(por);
+    const value1 = parseInt(value);
+    const value2 = parseInt(por);
 
-    let result = "La multiplicacion: " + value1 + " x " + value2 + " = " + (value1 * value2);
+    const result = 'La multiplicacion: ' + value1 + ' x ' + value2 + ' = ' + (value1 * value2);
 
     return result;
 

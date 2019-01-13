@@ -1,20 +1,20 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'hijo',
+  selector: 'app-hijo',
   templateUrl: './hijo.component.html',
   styleUrls: ['./hijo.component.css']
 })
 export class HijoComponent {
   public title: string;
 
-  @Input('texto1') propiedad_uno: string;
-  @Input('texto2') propiedad_dos: string;
+  @Input() propiedad_uno: string;
+  @Input() propiedad_dos: string;
 
   @Output() fromHijo = new EventEmitter();
 
   constructor() {
-    this.title = "Hijo";
+    this.title = 'Hijo';
   }
 
   enviar() {

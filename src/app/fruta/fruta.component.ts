@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'fruta',
+  selector: 'app-fruta',
   templateUrl: './fruta.component.html',
   styleUrls: ['./fruta.component.css']
 })
@@ -20,14 +20,6 @@ export class FrutaComponent {
     this.nombre = 'viferpar';
     this.edad = 25;
     this.mayorEdad = true;
-  }
-
-  ngOnInit() {
-    this.hola(this.nombre);
-  }
-
-  hola(nombre) {
-    console.log('Hola ' + nombre);
   }
 
 }

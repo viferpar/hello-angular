@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'plantilla',
+  selector: 'app-plantilla',
   templateUrl: './plantilla.component.html',
   styleUrls: ['./plantilla.component.css']
 })
@@ -16,9 +16,9 @@ export class PlantillaComponent {
   public datosHijo: any;
 
   constructor() {
-    this.titulo = "Plantillas ngTemplate en Angular";
+    this.titulo = 'Plantillas ngTemplate en Angular';
     this.administrador = true;
-    this.dato_externo = "viferpar";
+    this.dato_externo = 'viferpar';
     this.identity = {
       id: 1,
       web: 'noweb.com',
