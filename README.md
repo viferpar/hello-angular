@@ -1,2 +1,2 @@
 # MiPrimeraAppAngular
-Aplicacion angular que hace uso de las principales características del framework
+Aplicacion Angular que hace uso de las principales características del framework.
