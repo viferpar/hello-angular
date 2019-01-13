@@ -18,7 +18,7 @@ export class PlantillaComponent {
   constructor() {
     this.titulo = "Plantillas ngTemplate en Angular";
     this.administrador = true;
-    this.dato_externo = "Vicente Ferrandiz";
+    this.dato_externo = "viferpar";
     this.identity = {
       id: 1,
       web: 'noweb.com',

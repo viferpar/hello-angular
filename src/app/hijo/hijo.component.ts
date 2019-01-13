@@ -19,7 +19,7 @@ export class HijoComponent {
 
   enviar() {
     this.fromHijo.emit({
-      nombre: 'Vicente Ferrandiz',
+      nombre: 'Vicent Ferrandiz',
       web: 'noweb.com',
       twitter: '@viferpar'
     });

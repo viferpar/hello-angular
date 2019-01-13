@@ -20,7 +20,7 @@ export class EmpleadoComponent {
     this.trabajadores = [
       new Empleado('Manolo Martínez', 35, 'Administrativo', true),
       new Empleado('Ana Lopez', 25, 'Cocinera', true),
-      new Empleado('Vicente Ferrandiz', 25, 'Programador', false)
+      new Empleado('Luis García', 64, 'Programador', false)
     ];
     this.externos = false;
     this.color = 'red';

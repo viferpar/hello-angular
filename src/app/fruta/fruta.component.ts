@@ -17,7 +17,7 @@ export class FrutaComponent {
   trabajos: Array<string> = ['Carpintero', 'Albañil', 'Fontanero'];
 
   constructor() {
-    this.nombre = 'Vicente Ferrandiz';
+    this.nombre = 'viferpar';
     this.edad = 25;
     this.mayorEdad = true;
   }
